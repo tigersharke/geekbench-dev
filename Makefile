@@ -1,9 +1,9 @@
-PORTNAME=	geekbench
+PORTNAME=	Geekbench
 PORTVERSION=	6.4.0
 CATEGORIES=	benchmarks
 MASTER_SITES=	https://cdn.geekbench.com/
 PKGNAMESUFFIX=  -dev
-DISTFILES=	Geekbench-${PORTVERSION}-Linux.tar.gz
+DISTVERSIONSUFFIX=-Linux
 DIST_SUBDIR=    ${PORTNAME}${PKGNAMESUFFIX}
 
 MAINTAINER=	your.email@example.com
@@ -12,7 +12,6 @@ WWW=		https://www.geekbench.com
 
 LICENSE=	EULA
 LICENSE_NAME=	Geekbench End User License Agreement
-#LICENSE_FILE=	${WRKSRC}/EULA.txt
 LICENSE_PERMS=	dist-mirror pkg-mirror auto-accept
 
 # Dependencies for Linuxulator
@@ -31,6 +30,5 @@ WRKSRC=		${WRKDIR}/Geekbench-${PORTVERSION}-Linux
 do-install:
 	${MKDIR} ${STAGEDIR}${PREFIX}/bin
 	${INSTALL_PROGRAM} ${WRKSRC}/geekbench6 ${STAGEDIR}${PREFIX}/bin/
-#	${INSTALL_DATA} ${WRKSRC}/EULA.txt ${STAGEDIR}${PREFIX}/share/doc/geekbench/
 
 .include <bsd.port.mk>
