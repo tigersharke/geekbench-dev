@@ -2,7 +2,9 @@ PORTNAME=	geekbench
 PORTVERSION=	6.4.0
 CATEGORIES=	benchmarks
 MASTER_SITES=	https://cdn.geekbench.com/
+PKGNAMESUFFIX=  -dev
 DISTFILES=	Geekbench-${PORTVERSION}-Linux.tar.gz
+DIST_SUBDIR=    ${PORTNAME}${PKGNAMESUFFIX}
 
 MAINTAINER=	your.email@example.com
 COMMENT=	Cross-platform benchmark for CPU and GPU performance

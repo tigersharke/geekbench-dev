@@ -1,1 +1,1 @@
-This repo is intended to provide the contents of a FreeBSD ports tree leaf: /usr/ports/benchmarks/geekbench-dev so that those who desire may obtain and install their own. This will follow the iwebsite download page with updates as frequent as I am able.
+This repo is intended to provide the contents of a FreeBSD ports tree leaf: /usr/ports/benchmarks/geekbench-dev so that those who desire may obtain and install their own. This will follow the website download page with updates as frequent as I am able.
